@@ -1,10 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Test from "./Test";
 
-const App = () => {
-  return(
-      <h2>Enter the Dragon</h2>
+class App extends React.Component{
+  state = {
+    name: 'Siva',
+    age: 27
+  }
+  render(){
+    return(
+      <div>
+        {/* <h3>My name is {this.state.name} and I am {this.state.age} year's old</h3> */}
+        <Test name={this.state.name} age={this.state.age} />
+      </div>
     )
+  }
 }
 
 export default App;
