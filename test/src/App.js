@@ -3,10 +3,12 @@ import React from "react";
 import Test from "./Test";
 import FunState from "./Prac/FunState";
 // import OnChange from "./Prac/OnChange";
-import OnSubmit from "./Prac/OnSubmit";
+// import OnSubmit from "./Prac/OnSubmit";
 import DivTest from "./hooks/DivTest";
 import Main from "./funcHooks/Main";
 import OnClick from "./EventHandlers/OnClick";
+import OnChange from "./EventHandlers/OnChange";
+import OnSubmit from "./EventHandlers/OnSubmit";
 
 class App extends React.Component{
   state = {
@@ -27,10 +29,12 @@ class App extends React.Component{
         <br />
         <br />
         <br />
-        <OnSubmit />
+        {/* <OnSubmit /> */}
         <DivTest />
         <Main />
         <OnClick />
+        <OnChange />
+        <OnSubmit />
       </div>
     )
   }
