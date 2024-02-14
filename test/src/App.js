@@ -18,7 +18,7 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        {/* <h3>My name is {this.state.name} and I am {this.state.age} year's old</h3> */}
+        <h3>My name is {this.state.name} and I am {this.state.age} year's old</h3>
         <Test name={this.state.name} age={this.state.age} />
         <FunState />
         <center>
